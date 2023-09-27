@@ -5,7 +5,8 @@
     <div class="taille"></div>
 
     <div class="container-title">
-      <h2>Liste des aliments</h2>
+      <h2 *ngIf="!enfant">Liste des aliments</h2>
+      <h2 *ngIf="enfant" style="font-size: 1.2rem;">Liste des aliments adaptée à {{enfant.prenom}}</h2>
     </div>
 
     <div class="btn-top taille">
